@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    // Visit https://aka.ms/tsconfig.json to read more about this file
+
+    "lib": ["es2021"],
+    "module": "commonjs",
+    "target": "es2021",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "./build",
+
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+
+    "typeRoots": ["./src/types", "./node_modules/@types"]
+  }
+}
