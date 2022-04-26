@@ -1,5 +1,6 @@
 import { Response } from 'express';
 import { AppError, HttpCode } from './AppError';
+import { exitHandler } from '../ExitHandler';
 
 class ErrorHandler {
   public handleError(error: Error | AppError, response?: Response): void {
@@ -29,7 +30,7 @@ class ErrorHandler {
 
     console.log('Application encountered an untrusted error.');
     console.log(error);
-    process.exit(1);
+    exitHandler.handleExit(1);
   }
 }
 
